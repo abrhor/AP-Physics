@@ -1,22 +1,48 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import sklearn.linear_model 
+import scipy.optimize
+
 
 voltage1 = np.array([0, .3, .5, .8, 1., 1.2, 1.5, 1.8])
 current1 = np.array([0, .1, .12, .14, .18, .2, .24, .28])
 
-fig = plt.figure()
-ax1 = fig.add_subplot(111)
-ax2 = fig.add_subplot(211)
+def linfunct(x, m, b):
+  return m * x + b
+  
+ws, cov = scipy.optimize.curve_fit(linfunct, voltage1, current1)
+print(ws)
 
-ax1.scatter(voltage1, current1, label='Scatter Plot of Voltage v. Current (Ohmic)', color='b')
-ax2.plot(voltage1, current1, label='Plot of Voltage v. Current (Ohmic)', color='b')
+def predict_current(voltage, parameters):
+  current = parameters[0] * voltage + parameters[1]
+  return current
 
-ax1.set_xlabel('Voltage')
-ax1.set_ylabel('Current')
+predcurrent = predict_current(voltage1, ws)
 
-model = sklearn.linear_model.LinearRegression()
-model.fit(voltage1, current1)
+plt.scatter(voltage1, current1, color='g')
+plt.plot(voltage1, predcurrent)
+plt.xlabel('Voltage')
+plt.ylabel('Current')
+plt.suptitle('Voltage vs. Current with Best Fit Line (Ohmic)')
+plt.show()
 
-voltage2 = np.array([0., .1, .2, .5, .8, 1., 1.3]
-current2 = np.array([0., .14, .16, .2, .24, .26, .3]
+voltage2 = np.array([0., .1, .2, .5, .8, 1., 1.3])
+current2 = np.array([0., .14, .16, .2, .24, .26, .3])
+
+def lnfunct(x, m, h, k):
+  return m * np.log(x + h) + k
+
+ws2, cov = scipy.optimize.curve_fit(lnfunct, voltage2[1:], current2[1:])
+
+def predictlncurrent(voltage, parameters):
+  current = parameters[0] * np.log(voltage[1:] + parameters[1]) + parameters[2]
+  return current
+
+predictedlncurrent = predictlncurrent(voltage2, ws2)
+predictedlncurrent = np.insert(predictedlncurrent, 0, 0.)
+
+plt.scatter(voltage2, current2, color='g')
+plt.plot(voltage2, predictedlncurrent, color='b')
+plt.xlabel('Voltage')
+plt.ylabel('Current')
+plt.suptitle('Voltage vs. Current with Best Fit Natural Logarithmic Curve (Non-Ohmic)')
+plt.show()
