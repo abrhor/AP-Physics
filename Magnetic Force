@@ -1,0 +1,32 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.optimize import curve_fit
+bn = 6
+
+sf40 = 1. * (10. ** -2)
+sf37 = 2. * (10 ** -2)
+sf38 = 4. * (10 ** -2)
+sf39 = 3. * (10 ** -2)
+
+m = 165.1 * (10.**-3) # mass
+mg = m * 9.8
+voltage = 6.
+
+l = sf39
+current = np.array([2.8, 1.1, 2., .5])
+newmasses = np.array([164.3, 164.7, 164.5, 164.8])
+
+current2 = 1.
+masses2 = np.array([164.7, 164.8, 164.6]) 
+lengths2 = np.array([sf39, sf40, sf38])
+
+
+b = np.array([6., 5., 4.) 
+masses3 = np.array([164.7, 152., 139.2])
+length  = sf39
+
+def lin(x, m, b):
+  return m * x + b
+  
+ws, cov = curve_fit()
