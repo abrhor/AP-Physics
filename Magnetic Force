@@ -18,7 +18,7 @@ newmasses1 = np.array([164.3, 164.7, 164.5, 164.8])
 sns.regplot(current, newmasses1)
 plt.xlabel('Current (Amps)')
 plt.ylabel('Mass (Grams)')
-plt.title('Current in Wire vs. Measure Mass of Magnets (Length = .3 Meters')
+plt.title('Current in Wire vs. Measure Mass of Magnets (Length = .03 Meters)')
 plt.show()
 
 current2 = 1. # Constant current, altering length, output is mass
