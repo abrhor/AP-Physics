@@ -1,1 +1,4 @@
-# AP-Physics-2-Labs
+## AP-Physics
+I am currently taking AP Physics 2, and will be moving on to AP Physics C next year. I do a lot of my labs in Python.
+
+I am also in the process of, along with peers, creating an online database for physics education and tutelage videos. Get a glimpse of the action.
