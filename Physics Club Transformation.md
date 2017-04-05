@@ -4,7 +4,7 @@ Physics club is happy to announce some drastic changes that are going down. Plea
 The club will now be hosting **_STEM leadership, community-service activities, and 
 networking opportunities._** Please see below for details.
 
-## BT’s Physics Club is create Phycademy.org for NJCTL
+## BT’s Physics Club is create Zavcademy.org for NJCTL
 Our club is creating an online database with digital tutoring videos and tutorials for the AP/NJCTL Physics Packets/Questions & Curriculum. Similar to Khan Academy, this will be a platform for physics study videos and resources. It will include tutorials on the free response problems, AP questions, multiple choice, and the chapter lessons.
 
 This is an enormous project. We will be institutionalizing this, hopefully with NJCTL’s help, and expanding it to other schools. If you want to contribute to the videos or media component (marketing), please follow up as we have open positions. 
