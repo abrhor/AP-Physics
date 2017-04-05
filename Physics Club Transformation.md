@@ -31,3 +31,4 @@ If you want to sign up, as a tutor or as a student, do so here: https://docs.goo
 Look no further, we have signups open here: https://docs.google.com/forms/d/e/1FAIpQLSdtvWfveMGxnDCMCVjHrA00_tM1QOn-Xh352H4c5ylZb72gNA/viewform?usp=sf_link
 
 ## Field Trips and Networking
+Our club is planning a series of field trips, potentially including the Princeton Plasma Lab and other research laboratories. We also hope to host talks and communication with researchers and physics professors, creating great networking opportunities for club members. 
