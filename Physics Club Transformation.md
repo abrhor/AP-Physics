@@ -1,3 +1,4 @@
+# Drastic Changes to Physics Club
 ## Introduction
 Physics club is happy to announce some drastic changes that are going down. Please see below for details, but from here on in, physics club is not just a study room for physics. It is becoming an active, weekly-activity club like every other club at BT.
 
