@@ -1,0 +1,5 @@
+# Abstract 
+  Microtubules are a critical element of the cytoskeleton and of the mitosis process. Prior research has demonstrated that the function of neural microtubules are directly dependent on the frequency of their vibrations, as well as system temperature. Furthermore, neural function is dependent on tubular function. While a recent study used graphene to alter tubular length, studies have not yet focused on altering vibration frequency. As microtubules have a similar tubular shape to carbon nanotubes, unlike the hexagonal graphene, we predicted that it would be easier to insert the nanotubes into the tubules. In this experiment, we use carbon nanotubes to alter the structure of microtubules with carbon nanotubes in order to decrease their velocity. This in turn could decrease their kinetic energy and vibration frequency to ultimately decrease the neural function. To test this, we are monitoring porcine neural microtubules under a fluorescent microscope with guanosine triphosphate (GTP) attached. We will then insert carbon nanotubes into the tubule solution to observe for changes in their velocity. 
+
+# 
+
